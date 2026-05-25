@@ -1,0 +1,56 @@
+/*@import "preflight.css";*/
+@import "reset.css";
+@import "../fonts/inter/wght.css";
+@import "../fonts/geist-mono/wght.css";
+@import "../fonts/iosevka/latin.css";
+@import "../fonts/iosevka-aile/latin.css";
+@import "../fonts/instrument-serif/latin.css";
+
+:root {
+    --font-mono: "Iosevka", monospace;
+    --font-sans: "Inter Variable", system-ui, sans-serif;
+    --font-serif: "Instrument Serif", ui-monospace, Menlo, Consolas, monospace;
+}
+
+html {
+    background: #010203;
+    color: #f0f0f0;
+    font-size: 18px;
+}
+
+body {
+    padding: 1rem;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+h1 {
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 12px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+span {
+    color: #ccc;
+    font-family: var(--font-serif);
+    /*font-style: italic;*/
+    /*font-weight: normal;*/
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin-left: 5px;
+}
+
+ul {
+    /*margin-top: 1rem;*/
+    font-family: var(--font-mono);
+    margin-top: 0.5rem;
+    /*padding: 0.5rem 2rem;*/
+}

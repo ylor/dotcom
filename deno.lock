@@ -1,0 +1,59 @@
+{
+  "version": "5",
+  "specifiers": {
+    "npm:@fontsource-variable/geist-mono@^5.2.8": "5.2.8",
+    "npm:@fontsource-variable/inter@^5.2.8": "5.2.8",
+    "npm:@fontsource/instrument-serif@^5.2.8": "5.2.8",
+    "npm:@fontsource/iosevka-aile@^5.2.5": "5.2.5",
+    "npm:@fontsource/iosevka@^5.2.5": "5.2.5",
+    "npm:eta@^4.6.0": "4.6.0",
+    "npm:hono@^4.12.23": "4.12.23",
+    "npm:htmx.org@^4.0.0-beta4": "4.0.0-beta4",
+    "npm:the-fixi-project@~0.1.1": "0.1.1"
+  },
+  "npm": {
+    "@fontsource-variable/geist-mono@5.2.8": {
+      "integrity": "sha512-KI5bj+hkkRiHttYHmccotUZ80ZuZyai+RwI1d7UId0clkx/jXxlo8qYK8j54WzmpBjtMoEMPyllV7faDcj+6RA=="
+    },
+    "@fontsource-variable/inter@5.2.8": {
+      "integrity": "sha512-kOfP2D+ykbcX/P3IFnokOhVRNoTozo5/JxhAIVYLpea/UBmCQ/YWPBfWIDuBImXX/15KH+eKh4xpEUyS2sQQGQ=="
+    },
+    "@fontsource/instrument-serif@5.2.8": {
+      "integrity": "sha512-s+bkz+syj2rO00Rmq9g0P+PwuLig33DR1xDR8pTWmovH1pUjwnncrFk++q9mmOex8fUQ7oW80gPpPDaw7V1MMw=="
+    },
+    "@fontsource/iosevka-aile@5.2.5": {
+      "integrity": "sha512-K9EwsSxfWPWjvrYM+NkgHaImpHgaVgC67l6uWf6W+4taeca6LKMJn/U11mQiRwLlecoI0PP2Q9o/8iIPaLOSgg=="
+    },
+    "@fontsource/iosevka@5.2.5": {
+      "integrity": "sha512-Zv/UHJodDug1LcnWv2u2+GPp3oWP3U6Xp16cJOsqqZQNsCu8sA/ttT331N0NypxBZ+7c8szlSRlYDcy9liZ8pw=="
+    },
+    "eta@4.6.0": {
+      "integrity": "sha512-lW6is4T1NFOYnmqGZIfvixqj7A7sSvScF+DN8EK6K58xI5MZ5UvYe0GjopxOXQtZvUn4eDdVuZ8XSoYWTMEKwA=="
+    },
+    "hono@4.12.23": {
+      "integrity": "sha512-eIaZ9qDgu7XV0pxOCrg7/WhnQ6Ivm22UcxhXx/A3dcbqbbYgBEkc6e/J/s7j2tS96zoB0S9VBdLwQNCWwUo4LA=="
+    },
+    "htmx.org@4.0.0-beta4": {
+      "integrity": "sha512-gnz4FUkbWSGc+OK0MUq7KCyWDElaIJoQegwkdfL9Os8xwKugHvAvFJY5AL8n1vhTVDks3mugfOK5BWfZWKDqAw==",
+      "bin": true
+    },
+    "the-fixi-project@0.1.1": {
+      "integrity": "sha512-zg5XsFxDQx5a7LAeTaKqZNXQc0643Cy+Vz5ITkAp4uKJI95xPDfnHLR0nQqcg2EpEGg/7yClhA578dRnR4qwAw=="
+    }
+  },
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:@fontsource-variable/geist-mono@^5.2.8",
+        "npm:@fontsource-variable/inter@^5.2.8",
+        "npm:@fontsource/instrument-serif@^5.2.8",
+        "npm:@fontsource/iosevka-aile@^5.2.5",
+        "npm:@fontsource/iosevka@^5.2.5",
+        "npm:eta@^4.6.0",
+        "npm:hono@^4.12.23",
+        "npm:htmx.org@^4.0.0-beta4",
+        "npm:the-fixi-project@~0.1.1"
+      ]
+    }
+  }
+}
