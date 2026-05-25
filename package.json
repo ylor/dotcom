@@ -4,9 +4,7 @@
 	"private": true,
 	"scripts": {
 		"deploy": "wrangler deploy",
-		"dev": "wrangler dev",
-		"start": "wrangler dev",
-		"test": "vitest"
+		"dev": "wrangler dev"
 	},
 	"dependencies": {
 		"@fontsource-variable/geist-mono": "^5.2.8",
