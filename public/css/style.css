@@ -1,13 +1,13 @@
 /*@import "preflight.css";*/
 @import "reset.css";
-@import "../fonts/inter/wght.css";
-@import "../fonts/geist-mono/wght.css";
-@import "../fonts/iosevka/latin.css";
-@import "../fonts/iosevka-aile/latin.css";
-@import "../fonts/instrument-serif/latin.css";
+@import "../bundle/inter/wght.css";
+@import "../bundle/geist-mono/wght.css";
+@import "../bundle/iosevka/latin.css";
+@import "../bundle/iosevka-aile/latin.css";
+@import "../bundle/instrument-serif/latin.css";
 
 :root {
-    --font-mono: "Iosevka", monospace;
+    --font-mono: "Geist Mono", "Iosevka", monospace;
     --font-sans: "Inter Variable", system-ui, sans-serif;
     --font-serif: "Instrument Serif", ui-monospace, Menlo, Consolas, monospace;
 }

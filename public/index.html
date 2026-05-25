@@ -5,11 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="lambda.svg" type="image/svg+xml" />
         <link rel="stylesheet" href="css/style.css" />
-        <script src="js/htmx.min.js"></script>
+        <script src="bundle/htmx.js"></script>
         <title>Roly Reyes</title>
     </head>
     <body>
-        <h1 title="click me! ^_^" hx-get="/message" hx-target="#fact">Roly Reyes</h1>
+        <h1
+            title="click me! ^_^"
+            hx-get="/message"
+            hx-target="#fact"
+            hx-vals='js:{"current": document.getElementById("fact").textContent}'
+        >
+            Roly Reyes
+        </h1>
         <span id="fact">accepts credit; not blame</span>
         <ul>
             <li>information architect</li>

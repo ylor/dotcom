@@ -29,11 +29,13 @@ const facts = [
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    const randomFact = facts[Math.floor(Math.random() * facts.length)];
 
     switch (url.pathname) {
-      case "/message":
-        return new Response(randomFact);
+      case "/message": {
+        const current = url.searchParams.get("current");
+        const pool = current ? facts.filter((f) => f !== current) : facts;
+        return new Response(pool[Math.floor(Math.random() * pool.length)]);
+      }
       case "/random":
         return new Response(crypto.randomUUID());
       default:
