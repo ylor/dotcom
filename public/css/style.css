@@ -3,13 +3,12 @@
 @import "../bundle/inter/wght.css";
 @import "../bundle/geist-mono/wght.css";
 @import "../bundle/iosevka/latin.css";
-@import "../bundle/iosevka-aile/latin.css";
 @import "../bundle/instrument-serif/latin.css";
 
 :root {
-    --font-mono: "Geist Mono", "Iosevka", monospace;
+    --font-mono: "Geist Mono Variable", monospace;
     --font-sans: "Inter Variable", system-ui, sans-serif;
-    --font-serif: "Instrument Serif", ui-monospace, Menlo, Consolas, monospace;
+    --font-serif: "Instrument Serif", "Times New Roman", serif;
 }
 
 html {
@@ -45,12 +44,11 @@ span {
     /*font-weight: normal;*/
     font-size: 1.5rem;
     line-height: 1.25;
-    margin-left: 5px;
+    margin-left: 4px;
 }
 
 ul {
-    /*margin-top: 1rem;*/
     font-family: var(--font-mono);
-    margin-top: 0.5rem;
+    /*margin-top: 0.5rem;*/
     /*padding: 0.5rem 2rem;*/
 }
