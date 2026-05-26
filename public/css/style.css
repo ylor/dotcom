@@ -21,11 +21,6 @@ body {
     padding: 1rem;
 }
 
-a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
-}
-
 h1 {
     cursor: pointer;
     font-family: var(--font-sans);
@@ -49,6 +44,7 @@ span {
 
 ul {
     font-family: var(--font-mono);
-    /*margin-top: 0.5rem;*/
+    letter-spacing: -0.25px;
+    margin-top: 0.5rem;
     /*padding: 0.5rem 2rem;*/
 }
