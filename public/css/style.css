@@ -1,14 +1,21 @@
-/*@import "preflight.css";*/
-@import "reset.css";
-@import "../bundle/inter/wght.css";
-@import "../bundle/geist-mono/wght.css";
-@import "../bundle/iosevka/latin.css";
-@import "../bundle/instrument-serif/latin.css";
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
-:root {
-    --font-mono: "Geist Mono Variable", monospace;
-    --font-sans: "Inter Variable", system-ui, sans-serif;
-    --font-serif: "Instrument Serif", "Times New Roman", serif;
+@font-face {
+    font-family: "Berkeley Mono";
+    src: url("../fonts/BerkeleyMono-Variable.woff2") format("woff2-variations");
+    font-stretch: 50% 100%;
+    font-weight: 100 900;
+    font-display: block;
+}
+
+@font-face {
+    font-family: "Instrument Serif";
+    src: url("../fonts/InstrumentSerif-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: block;
 }
 
 html {
@@ -18,13 +25,15 @@ html {
 }
 
 body {
+    line-height: 1.5;
     padding: 1rem;
 }
 
 h1 {
     cursor: pointer;
-    font-family: var(--font-sans);
+    font-family: "Berkeley Mono", monospace;
     font-size: 3rem;
+    font-stretch: condensed;
     font-weight: 700;
     line-height: 1;
     margin-top: 12px;
@@ -34,17 +43,14 @@ h1 {
 
 span {
     color: #ccc;
-    font-family: var(--font-serif);
-    /*font-style: italic;*/
-    /*font-weight: normal;*/
+    font-family: "Instrument Serif", "Times New Roman", serif;
     font-size: 1.5rem;
     line-height: 1.25;
     margin-left: 4px;
 }
 
 ul {
-    font-family: var(--font-mono);
+    font-family: "Berkeley Mono", monospace;
     letter-spacing: -0.25px;
     margin-top: 0.5rem;
-    /*padding: 0.5rem 2rem;*/
 }

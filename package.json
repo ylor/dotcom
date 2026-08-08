@@ -1,17 +1,17 @@
 {
-	"name": "dotcom",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"deploy": "wrangler deploy",
-		"dev": "wrangler dev"
-	},
-	"dependencies": {
-		"@fontsource-variable/geist-mono": "^5.2.8",
-		"@fontsource-variable/inter": "^5.2.8",
-		"@fontsource/instrument-serif": "^5.2.8",
-		"@fontsource/iosevka": "^5.2.5",
-		"htmx.org": "^4.0.0-beta4"
-	},
-	"devDependencies": {}
+  "name": "dotcom",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "npm@10.9.8",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run"
+  },
+  "devDependencies": {
+    "wrangler": "4.120.0"
+  }
 }

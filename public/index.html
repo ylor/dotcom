@@ -5,18 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="lambda.svg" type="image/svg+xml" />
         <link rel="stylesheet" href="css/style.css" />
-        <script src="bundle/htmx.js"></script>
         <title>Roly Reyes</title>
     </head>
     <body>
-        <h1
-            title="click me! ^_^"
-            hx-get="/message"
-            hx-target="#fact"
-            hx-vals='js:{"current": document.getElementById("fact").textContent}'
-        >
-            Roly Reyes
-        </h1>
+        <h1 title="click me! ^_^">Roly Reyes</h1>
         <span id="fact">accepts credit; but not blame</span>
         <ul>
             <li>information architect</li>
@@ -24,5 +16,35 @@
             <li>system engineer</li>
             <li>sysadmin</li>
         </ul>
+        <script>
+            const facts = [
+                "accepts credit; but not blame",
+                "cat catcher",
+                "ceo of htmx",
+                "charmingly garrulous",
+                "dark mode enthusiast",
+                "every second counts",
+                "grug brained",
+                "half-life 3 numerologist",
+                "inside me are two wolves",
+                "knows enough to be dangerous",
+                "minimalist",
+                "neon genesis evangelion evangelist",
+                "occasional grass toucher",
+                "poodle-pilled",
+                "yes, chef",
+            ];
+            const fact = document.querySelector("#fact");
+            let remaining = facts.filter((choice) => choice !== fact.textContent);
+
+            document.querySelector("h1").addEventListener("click", () => {
+                if (remaining.length === 0) {
+                    remaining = facts.filter((choice) => choice !== fact.textContent);
+                }
+
+                const index = Math.floor(Math.random() * remaining.length);
+                fact.textContent = remaining.splice(index, 1)[0];
+            });
+        </script>
     </body>
 </html>
